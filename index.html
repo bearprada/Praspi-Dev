@@ -38,12 +38,12 @@
             var isBubbleOpen = false;
             $("#op_bubble").click(function(){
                 var url = (isBubbleOpen) ? "/on" : "/off";
+                isBubbleOpen = !isBubbleOpen;
                 $.ajax({
                     url: isBubbleOpen,
                     type: "GET",
                     success:function(res){
-                            alert("success !!");
-                            isBubbleOpen != isBubbleOpen;
+                        alert("success !!" + res);  
                     }
                 });  
             });
