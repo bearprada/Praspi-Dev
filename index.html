@@ -40,7 +40,7 @@
                 var url = (isBubbleOpen) ? "/on" : "/off";
                 isBubbleOpen = !isBubbleOpen;
                 $.ajax({
-                    url: isBubbleOpen,
+                    url: url,
                     type: "GET",
                     success:function(res){
                         alert("success !!" + res);  
